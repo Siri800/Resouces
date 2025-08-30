@@ -1,11 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Webpage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Study Resource Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      padding: 20px;
+    }
+    .section {
+      background: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #4CAF50;
+    }
+    ul {
+      list-style-type: square;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to My Webpage</h1>
-    <p>This is a simple HTML example.</p>
-    <button onclick="alert('Hello! You clicked the button.')">Click Me</button>
+
+  <header>
+    <h1>📚 My Study Resource Page</h1>
+    <p>All your notes and resources in one place</p>
+  </header>
+
+  <nav>
+    <a href="#math">Math</a>
+    <a href="#science">Science</a>
+    <a href="#cs">Computer Science</a>
+    <a href="#notes">Notes</a>
+  </nav>
+
+  <div class="container">
+    <div class="section" id="math">
+      <h2>Mathematics</h2>
+      <ul>
+        <li><a href="https://www.khanacademy.org/math" target="_blank">Khan Academy - Math</a></li>
+        <li><a href="https://www.cuemath.com/" target="_blank">Cuemath</a></li>
+        <li>My Algebra Notes (PDF)</li>
+      </ul>
+    </div>
+
+    <div class="section" id="science">
+      <h2>Science</h2>
+      <ul>
+        <li><a href="https://www.nationalgeographic.com/science/" target="_blank">National Geographic - Science</a></li>
+        <li><a href="https://www.physicsclassroom.com/" target="_blank">Physics Classroom</a></li>
+      </ul>
+    </div>
+
+    <div class="section" id="cs">
+      <h2>Computer Science</h2>
+      <ul>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+        <li><a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></li>
+        <li>Programming Notes (HTML, CSS, JS)</li>
+      </ul>
+    </div>
+
+    <div class="section" id="notes">
+      <h2>My Notes</h2>
+      <p>Here you can add your own study notes and important reminders.</p>
+    </div>
+  </div>
+
 </body>
 </html>
